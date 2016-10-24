@@ -24,7 +24,8 @@ var config = {
 
     weixin: {
         app_id: "wx5fdf3c058cc165a1",
-        app_secret: "f8436abf85ee6062e3e42a980ad17eea"
+        app_secret: "f8436abf85ee6062e3e42a980ad17eea",
+        token: "token"
     }
 };
 

@@ -1,6 +1,6 @@
 var domain = require("domain"),
     _ = require("lodash"),
-    lcUtil = require("./core/util");
+    wtutil = require("./core/wtutil");
 
 module.exports = exports = function (config, logger) {
 

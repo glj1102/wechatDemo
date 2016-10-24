@@ -37,6 +37,7 @@
     "winston": "^1.0.1",
     "im-cache": "0.0.2",
     "jssha": "1.5.0",
+    "xml2js": "^0.4.17",
     "express-session": "^1.11.3"
   }
 }
