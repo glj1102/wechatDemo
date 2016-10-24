@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "DIN Condensed Bold";
+    src: url("DIN Condensed Bold.eot"); /* IE9 */
+    src: url("DIN Condensed Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    
+    url("DIN Condensed Bold.woff") format("woff"), /* chrome、firefox */
+    url("DIN Condensed Bold.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    
+    url("DIN Condensed Bold.svg#DIN Condensed Bold") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+

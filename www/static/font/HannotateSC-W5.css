@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "HannotateSC-W5";
+    src: url("HannotateSC-W5.eot"); /* IE9 */
+    src: url("HannotateSC-W5.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    
+    url("HannotateSC-W5.woff") format("woff"), /* chrome、firefox */
+    url("HannotateSC-W5.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    
+    url("HannotateSC-W5.svg#HannotateSC-W5") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+

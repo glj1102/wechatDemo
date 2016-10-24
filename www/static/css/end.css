@@ -1,0 +1,87 @@
+.wrapper {
+    width    : 100%;
+    height   : 100%;
+    position : relative;
+    overflow : hidden;
+}
+
+.wrapper-end {
+    width           : 100%;
+    height          : 100%;
+    background      : url(../images/end/bg.png) no-repeat bottom;
+    background-size : cover;
+}
+
+.end-heading {
+    width       : 100%;
+    text-align  : center;
+    padding-top : .6rem;
+}
+
+.end-heading img {
+    width : 55%;
+}
+
+.end-goals {
+    width           : 4rem;
+    height          : 4rem;
+    background      : url(../images/end/goal_bg.png) no-repeat;
+    background-size : cover;
+    text-align      : center;
+    margin          : -1.4rem auto 0;
+}
+
+.end-goals h1 {
+    font-size   : 2.5rem;
+    font-family : "DIN Condensed Bold";
+    color       : #fff;
+    text-shadow : .2rem 0 #5c42a6;
+    padding-top : .3rem;
+}
+
+.end-goals p {
+    font-size  : .35rem;
+    color      : #7470fd;
+    margin-top : -2rem;
+}
+
+.end-active {
+    text-align : center;
+    margin-top : .3rem;
+}
+
+.end-active img {
+    width  : 40%;
+    cursor : pointer;
+}
+
+.end-active p {
+    font-size : .3rem;
+}
+
+.end-active p a {
+    color           : #f3885c;
+    text-decoration : none;
+}
+
+.end-pedestal {
+    text-align      : center;
+    position        : fixed;
+    bottom          : 0;
+    left            : 0;
+    width           : 100%;
+    height          : 100%;
+    background      : url(../images/end/pedestal.png) no-repeat bottom;
+    background-size : contain;
+}
+
+.end-pedestal img {
+    display    : block;
+    width      : 35%;
+    position   : absolute;
+    bottom     : .8rem;
+    left       : 0;
+    right      : 0;
+    text-align : center;
+    margin     : 0 auto;
+}

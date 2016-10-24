@@ -1,0 +1,230 @@
+.wrapper {
+    position           : relative;
+    width              : 100%;
+    height             : 100%;
+    overflow           : hidden;
+    -webkit-transition : background .5s;
+    -moz-transition    : background .5s;
+    -ms-transition     : background .5s;
+    -o-transition      : background .5s;
+    transition         : background .5s;
+}
+
+.wrapper-start {
+    position   : absolute;
+    z-index    : 3;
+    width      : 100%;
+    height     : 100%;
+    text-align : center;
+}
+
+.start-bg {
+    position        : absolute;
+    width           : 100%;
+    height          : 100%;
+    z-index         : 2;
+
+    background      : url(../images/start/bg.png) no-repeat;
+    background-size : cover;
+}
+
+.start-bg2 {
+    position        : absolute;
+    width           : 100%;
+    height          : 100%;
+    z-index         : 2;
+
+    background      : url(../images/start/pedestal.png) no-repeat bottom;
+    background-size : cover;
+}
+
+.start-title {
+    width       : 100%;
+    text-align  : center;
+    padding-top : .8rem;
+}
+
+.start-title img {
+    width : 85%;
+}
+
+.start-title img.worktile {
+    display : inline-block;
+}
+
+.start-title img.worktile_red {
+    display : none;
+}
+
+.start-line {
+    width      : 75%;
+    height     : 1px;
+    background : #d5d5d7;
+    margin     : .3rem auto .1rem;
+}
+
+.start-desc {
+    font-size  : .25rem;
+    text-align : center;
+    color      : #d5d5d7;
+    position   : relative;
+    z-index    : 3;
+}
+
+.start-desc a {
+    color           : #f3885c;
+    text-decoration : none;
+}
+
+.start-detail {
+    width           : 100%;
+    height          : 100%;
+    position        : absolute;
+    top             : -1rem;
+    z-index         : 2;
+    background      : url(../images/start/decorate.png) no-repeat;
+    background-size : cover;
+}
+
+.start-theme {
+    position   : absolute;
+    top        : 4.1rem;
+    left       : 0;
+    right      : 0;
+    text-align : center;
+}
+
+.start-theme img {
+    width : 33%;
+}
+
+.start-go {
+    position   : absolute;
+    top        : 5.4rem;
+    left       : 0;
+    right      : 0;
+    text-align : center;
+}
+
+.start-go img {
+    width : 32%;
+}
+
+.prize-detail {
+    position  : absolute;
+    z-index   : 3;
+    bottom    : .4rem;
+    left      : .5rem;
+    font-size : .25rem;
+}
+
+.prize-detail a {
+    color           : #f3885c;
+    text-decoration : none;
+}
+
+/*!*活动细则*!*/
+.activity-rules {
+    width      : 100%;
+    height     : 100%;
+    background : rgba(0, 0, 0, .5);
+    position   : fixed;
+    top        : 0;
+    left       : 0;
+    z-index    : 9;
+    display    : none;
+}
+
+.rules-detail {
+    width         : 6rem;
+    height        : 7rem;
+    background    : #e5e5e5;
+    position      : absolute;
+    top           : 50%;
+    left          : 50%;
+    margin-left   : -3rem;
+    margin-top    : -3.5rem;
+    border-radius : 10px;
+    padding       : .4rem;
+}
+
+.rule-title {
+    font-size   : .4rem;
+    font-family : "HannotateSC-W5";
+    text-align  : center;
+}
+
+.rule-line {
+    width           : 100%;
+    height          : .2rem;
+    background      : url(../images/start/line.png) no-repeat;
+    background-size : 100%;
+    margin          : .1rem 0 .2rem 0;
+}
+
+.rule-text p {
+    font-size      : .25rem;
+    font-family    : "HannotateSC-W5";
+    padding-bottom : .3rem;
+    line-height    : .5rem;
+}
+
+/*游戏*/
+
+.game-canvas {
+    position : absolute;
+    top      : 0px;
+    left     : 0px;
+    z-index  : 1;
+    width    : 100%;
+    height   : 100%;
+}
+
+.score-area {
+    display    : none;
+    position   : absolute;
+    top        : 50%;
+    left       : 0;
+    z-index    : 2;
+    margin-top : -50px;
+    width      : 100%;
+    height     : 100px;
+    text-align : center;
+    color      : #ffffff;
+    font-size  : 30px;
+}
+
+.wrapper--game-start .wrapper-start {
+    height : auto;
+}
+
+.wrapper--game-start .game-area {
+    display : block;
+}
+
+.wrapper--game-start .start-desc,
+.wrapper--game-start .start-detail,
+.wrapper--game-start .prize-detail,
+.wrapper--game-start .start-bg,
+.wrapper--game-start .start-bg2 {
+    -webkit-animation : gamestart .5s forwards;
+    animation         : gamestart .5s forwards;
+}
+
+@-webkit-keyframes gamestart {
+    from {
+        opacity : 1;
+    }
+    to {
+        opacity : 0;
+    }
+}
+
+@keyframes gamestart {
+    from {
+        opacity : 1;
+    }
+    to {
+        opacity : 0;
+    }
+}
