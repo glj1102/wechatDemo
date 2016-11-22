@@ -87,11 +87,13 @@ var Request = function (config, logger, data) {
             msg.FromUserName = data.FromUserName[0];
             msg.CreateTime = data.CreateTime[0];
             msg.MsgType = data.MsgType[0];
+
             switch (msg.MsgType) {
                 case 'text' :
                     msg.Content = data.Content[0];
                     msg.MsgId = data.MsgId[0];
                     handle_text(msg, res);
+                    console.log("receive wx message====", msg);
                     res.setHeader("Content-Type", "text/plain");
                     return res.send("");
                     break;
@@ -100,6 +102,7 @@ var Request = function (config, logger, data) {
                     msg.MsgId = data.MsgId[0];
                     msg.MediaId = data.MediaId[0];
                     console.log(msg)
+                    //ldy060igoPKBAgCsg7uqKAuGFsld0Am1GU4MS43j7mbhsLUmfCGMMP_i349DXvCm
                     res.setHeader("Content-Type", "text/plain");
                     return res.send("");
                     break;
@@ -149,7 +152,8 @@ var Request = function (config, logger, data) {
 
     var handle_text = function (msg, res) {
         var text = msg.Content;
-        if(text.trim() == "研发"){
+        console.log("yanf ....")
+        if(text.trim() == "yanfa"){
             var data = {
                 "touser":msg.FromUserName,
                 "msgtype":"news",
@@ -205,6 +209,7 @@ var Request = function (config, logger, data) {
                 headers: {"Content-Type": "application/json"},
                 json   : data
             }, function (err, res, body) {
+                console.log("sendmessage....", body)
             })
         });
     };

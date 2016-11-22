@@ -17,7 +17,7 @@ exports.run = function () {
                 "button":[
                     {
                         "type":"view",
-                        "name":"工作台",
+                        "name":"work",
                         "url":"http://weixin.worktile.com"
                     },
                     {
